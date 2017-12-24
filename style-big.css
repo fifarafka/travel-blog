@@ -1,0 +1,485 @@
+@media screen and (min-width: 900px) {
+  .menu {
+    display: none;
+  }
+  #main_nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #main_nav li {
+    float: left;
+  }
+  #main_nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    border-bottom: double;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #main_nav li a.active {
+    background-color: white;
+    color: red;
+  }
+  /* Change the link color to #111 (black) on hover */
+  #main_nav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  .heida {
+    position: relative;
+    z-index: 1;
+    padding: 80px;
+  }
+  .heida_container {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    padding: 60px;
+  }
+  .taylan {
+    position: relative;
+    z-index: 1;
+    padding: 80px;
+  }
+  .taylan_container {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    letter-spacing: 3px;
+    padding: 60px;
+  }
+  .profile_photo {
+    height: 35%;
+    width: 35%;
+  }
+  .heida img {
+    margin-right: 40px;
+  }
+  .taylan img {
+    margin-left: 40px;
+  }
+  #contact-section {
+    position: relative;
+    z-index: 1;
+    padding: 80px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: black;
+  }
+  .contact-container {
+    display: flex;
+    padding: 50px;
+  }
+  .contact-text-content {
+    padding: 40px;
+    width: 45%;
+    text-align: right;
+  }
+  .contact-form {
+    margin-left: 70px;
+  }
+  .quote {
+    color: white;
+    height: 400px;
+    background-image: url("img/home_background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 45px;
+    padding: 100px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    background: #4c4c4c;
+  }
+
+  .slider-container {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-container::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+
+  .slider-imgs {
+  }
+
+  .slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #i1, #i2, #i3, #i4, #i5 {
+    display: none;
+  }
+
+  .slider-nav {
+    width: 100%;
+    height: 12px;
+    bottom: 10%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+  }
+
+  .next, .prev {
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    border-radius: 0 10px 10px 0;
+    opacity: 0.8;
+    padding: 20px;
+    bottom: 40%;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .next img, .prev img {
+    height: 30px;
+  }
+
+  .prev {
+    padding-left: 10px;
+  }
+
+  .next {
+    right: 0;
+    padding-right: 10px;
+    border-radius: 10px 0 0 10px ;
+  }
+
+  .dots {
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  #two, #three, #four, #five {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slider-container {
+    display: none;
+  }
+  .icon-menu {
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    transform: rotate(0deg);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+  }
+
+  .icon-menu.hover {
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    transform: rotate(90deg);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+  }
+  .menu {
+    display: inherit;
+    justify-content: inherit;
+    width: 35%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .without_nav {
+    display: none;
+  }
+  .with_nav {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .with_nav li a {
+    display: block;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .with_nav ul {
+    list-style-type: none;
+    padding: 0px;
+  }
+  .heida {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+  }
+  .heida_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  .taylan {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+  }
+  .taylan_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    padding: 20px;
+  }
+  .profile_photo {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 500px;
+    margin-bottom: 20px;
+  }
+  #contact-section {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: black;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 10px;
+  }
+  .contact-text-content {
+    padding: 10px;
+    text-align: center;
+  }
+  .quote {
+    color: white;
+    height: 400px;
+    background-image: url("img/home_background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 45px;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 40px;
+  }
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.icon:hover {
+  transform: rotateY( 180deg );
+}
+
+.follow_container {
+  display: flex;
+  justify-content: center;
+}
+
+.follow {
+  z-index: 1;
+  padding: 80px;
+  position: relative;
+  perspective: 400px;
+}
+
+.follow::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("img/brad-helmink.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .4;
+}
+
+p, h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
+
+.short-about {
+  font-size: 15px;
+  padding: 50px;
+}
+
+.heida::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("img/ryan-searle.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .4;
+}
+
+.taylan::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("img/raechel-romero.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .4;
+}
+
+#contact-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("img/ishan-seefromthesky.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  opacity: .4;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
