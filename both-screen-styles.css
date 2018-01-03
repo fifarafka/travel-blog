@@ -1,0 +1,126 @@
+.icon {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.icon:hover {
+  transform: rotateY( 180deg);
+}
+
+.follow_container {
+  display: flex;
+  justify-content: center;
+}
+
+.follow {
+  z-index: 1;
+  padding: 80px;
+  position: relative;
+  perspective: 400px;
+}
+
+.follow::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("img/background/brad-helmink.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .4;
+}
+
+p, h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
+
+.short-about {
+  font-size: 15px;
+  padding: 50px;
+}
+
+.heida::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("img/background/ryan-searle.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .4;
+}
+
+.taylan::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("img/background/raechel-romero.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .4;
+}
+
+#contact-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("img/background/ishan-seefromthesky.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  opacity: .4;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
