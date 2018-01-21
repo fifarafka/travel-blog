@@ -5,8 +5,6 @@ $(document).ready(function() {
   const imgs = ['#one', '#two', '#three', '#four', '#five'];
 
   function dotClicked(which) {
-    console.log(dots[active - 1]);
-    console.log(imgs[which - 1]);
     $(dots[active - 1]).css("background", "rgba(0, 0, 0, 0.4)");
     $(imgs[active - 1]).css("z-index", "8");
     $(dots[which - 1]).css("background", "rgba(255, 255, 255, 0.6)");
